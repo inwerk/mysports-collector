@@ -1,0 +1,16 @@
+{
+"mysports_entries":[
+  {
+    "name":"Sportfabrik",
+    "studio_id":1210009740,
+    "studio_path":"c3BvcnRmYWJyaWs6MTIxMDAwOTc0MA%3D%3D",
+    "api_key":"sportfabrik"
+  },
+  {
+    "name":"Baskets Sportfabrik",
+    "studio_id":1214101500,
+    "studio_path":"c3BvcnRmYWJyaWs6MTIxNDEwMTUwMA%3D%3D",
+    "api_key":"sportfabrik"
+  }
+]
+}
