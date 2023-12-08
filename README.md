@@ -1,4 +1,4 @@
-# Data collector for MySports.com
+# Data collection for MySports.com
 
 [MySports](https://www.mysports.com/) is a German fitness platform featuring several thousand gyms that use this platform to offer
 their members various services. The website contains information about gyms such as
@@ -13,16 +13,45 @@ However, other fitness studios can also be configured.
 
 ## Instructions
 
+### Commands
+
+Start to collect data every 15 minutes (at hh:00:00, hh:15:00, hh:30:00 and hh:45:00):
 ```
-gymstalker --help
 gymstalker start
+```
+![start](./files/start.png)
+
+Display current status:
+```
 gymstalker status
+```
+![status](./files/status.png)
+
+Stop collecting data:
+```
 gymstalker stop
 ```
+![stop](./files/stop.png)
+
+### Configuration
+
+Configure fitness studios:
+```
+nano /home/$USER/.inwerk/apps/mysports-collector/config.json
+```
+![config](./files/config.png)
+
+### CSV files
+
+The collected data is saved in CSV format:
+```
+ls /home/$USER/gymstalker_data
+```
+![ls](./files/ls.png)
 
 ## How to install on Linux
 
-Run the script for installing the application.
+Run the `install.sh` script to install the application.
 
 ```
 curl -sSL https://raw.githubusercontent.com/inwerk/mysports-collector/main/install.sh | bash
@@ -30,8 +59,8 @@ curl -sSL https://raw.githubusercontent.com/inwerk/mysports-collector/main/insta
 
 ## How to uninstall
 
-Run the script to remove the application from your system.
+Run the `uninstall.sh` script to remove the application from your system.
 
-```angular2html
+```
 curl -sSL https://raw.githubusercontent.com/inwerk/mysports-collector/main/uninstall.sh | bash
-```# mysports-collector
+```
